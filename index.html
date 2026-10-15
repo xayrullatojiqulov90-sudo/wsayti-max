@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var theme=localStorage.getItem('wasyt-theme');document.documentElement.setAttribute('data-theme',theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<title>WASYT — Система автоматизации магазина для малого и среднего бизнеса</title>
+<meta name="description" content="WASYT — система автоматизации магазина: касса, продажи, складской учёт, CRM и аналитика в одной системе. Автоматизация розничной торговли в Узбекистане.">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/premium.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="256x256" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('pre');</script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img class="logo" src="assets/img/wasyt-logo-dark.png" alt="WASYT">
+    </a>
+    <nav class="nav-links">
+      <div class="nav-drop wide2">
+        <button class="nav-drop-btn" type="button">Решения<svg class="dc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="nav-drop-menu">
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7v7a2 2 0 0 0 2 2h15a3 3 0 0 0 3-3c0-1.3-.8-2.2-2-2.7L13 8l-1-3H4a2 2 0 0 0-2 2z"/><path d="M2 12h6"/></svg></span><span class="dt"><b>Магазин обуви</b></span></a>
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></span><span class="dt"><b>Магазин одежды</b></span></a>
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.5-6h11L19 11"/><path d="M3 11h18l-1.5 8a2 2 0 0 1-2 1.6H6.5a2 2 0 0 1-2-1.6z"/></svg></span><span class="dt"><b>Продуктовый магазин</b></span></a>
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6L3 18l3 3 6.1-6.1a4 4 0 0 0 5.6-5.6l-2.4 2.4-2.1-.5-.5-2.1z"/></svg></span><span class="dt"><b>Строительный магазин</b></span></a>
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 7a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/><path d="M12 11v2l1.5 1"/><path d="M9 4.5L9.5 2h5l.5 2.5"/></svg></span><span class="dt"><b>Магазин аксессуаров</b></span></a>
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="dt"><b>Товары для дома</b></span></a>
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M10.5 18h3"/></svg></span><span class="dt"><b>Магазин электроники</b></span></a>
+          <a href="product.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg></span><span class="dt"><b>Магазин косметики</b></span></a>
+        </div>
+      </div>
+      <a href="index.html#why">Почему WASYT</a>
+      <a href="index.html#pricing">Цена</a>
+      <a href="shop.html">Оборудование</a>
+      <div class="nav-drop">
+        <button class="nav-drop-btn" type="button">Компания<svg class="dc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="nav-drop-menu">
+          <a href="partners.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="dt"><b>Партнёрство</b></span></a>
+          <a href="contacts.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span class="dt"><b>Контакты</b></span></a>
+          <a href="demo.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></span><span class="dt"><b>Демо</b></span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-right">
+      <div class="lang">
+        <button class="lang-btn"><span class="cur">RU</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="lang-menu">
+          <a href="#" data-lang="ru" class="active">🇷🇺 Русский</a>
+          <a href="#" data-lang="uz">🇺🇿 O'zbek</a>
+          <a href="#" data-lang="en">🇬🇧 English</a>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-sm" data-open-demo>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Демо-доступ
+      </button>
+      <button class="cart-btn" data-open-cart aria-label="Корзина"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="badge">0</span></button>
+      <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu">
+  <button class="m-close" aria-label="Закрыть" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="mlabel">Решения</div>
+  <div class="msub">
+    <a class="msub-a" href="product.html">Магазин одежды</a>
+    <a class="msub-a" href="product.html">Магазин обуви</a>
+    <a class="msub-a" href="product.html">Продуктовый магазин</a>
+    <a class="msub-a" href="product.html">Строительный магазин</a>
+    <a class="msub-a" href="product.html">Магазин косметики</a>
+    <a class="msub-a" href="product.html">Магазин аксессуаров</a>
+    <a class="msub-a" href="product.html">Магазин электроники</a>
+    <a class="msub-a" href="product.html">Товары для дома</a>
+  </div>
+  <a href="index.html#why">Почему WASYT</a>
+  <a href="index.html#pricing">Цена</a>
+  <a href="shop.html">Оборудование</a>
+  <a href="partners.html">Партнёрство</a>
+  <a href="contacts.html">Контакты</a>
+  <a href="demo.html">Демо</a>
+  <button class="btn btn-primary" data-open-demo>Получить демо-доступ</button>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <span class="blob a"></span><span class="blob b"></span>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="hero-badge" data-reveal><span class="dot"></span>Автоматизация магазина</span>
+      <h1 data-reveal data-d="1">Умная автоматизация магазинов <span class="rot-word" id="rotWord" data-no-i18n>одежды</span></h1>
+      <p class="lead" data-reveal data-d="2">Продажи, касса, склад, клиенты и финансы — в одной понятной системе WASYT. Настраивается под вашу нишу и работает на любом устройстве.</p>
+      <div class="hero-cta" data-reveal data-d="3">
+        <button class="btn btn-primary" data-open-demo>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          Получить демо-доступ
+        </button>
+        <a href="contacts.html" class="btn btn-ghost">Оставить заявку</a>
+      </div>
+      <div class="hero-trust" data-reveal data-d="4" style="display:flex;align-items:center;gap:18px;margin-top:26px;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--body);font-weight:500"><span style="width:22px;height:22px;border-radius:50%;background:#1f9d5b;color:#fff;display:grid;place-items:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px"><polyline points="20 6 9 17 4 12"/></svg></span>7 дней бесплатно</div>
+      </div>
+    </div>
+    <div class="hero-figure" data-reveal data-d="2">
+      <div class="hero-mascot hero-carousel">
+        <span class="glow"></span>
+        <span class="ring r2"></span>
+        <span class="ring"></span>
+        <div class="hero-stage" id="heroStage">
+          <img class="hslide active" data-cat="clothing"    src="assets/img/hero/clothing.png"    alt="WASYT — автоматизация магазина одежды">
+          <img class="hslide" data-cat="shoes"       src="assets/img/hero/shoes.png"       alt="WASYT — автоматизация магазина обуви">
+          <img class="hslide" data-cat="electronics" src="assets/img/hero/electronics.png" alt="WASYT — автоматизация магазина электроники">
+          <img class="hslide" data-cat="cosmetics"   src="assets/img/hero/cosmetics.png"   alt="WASYT — автоматизация магазина косметики">
+          <img class="hslide" data-cat="accessories" src="assets/img/hero/accessories.png" alt="WASYT — автоматизация магазина аксессуаров">
+        </div>
+        <div class="chip c1">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span>
+          <div><b>+38%</b><span>к скорости продаж</span></div>
+        </div>
+        <div class="chip c2" id="catChip">
+          <span class="ic" id="catIcon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></span>
+          <div><b id="catLabel" data-no-i18n>Магазин одежды</b><span>автоматизация под нишу</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<section style="padding:clamp(28px,4vw,40px) 0;border-block:1px solid var(--line);background:#fff">
+  <div class="wrap trust" data-reveal>
+    <div class="rating">
+      <div class="stars">
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg>
+      </div>
+      <div class="rt">4.9 / 5<small>Средняя оценка клиентов</small></div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-logos">
+      <span>RETAIL&nbsp;CO</span><span>AUTO&nbsp;HUB</span><span>MEBEL+</span><span>TECH&nbsp;STORE</span><span>MARKET&nbsp;UZ</span><span>BUILD&nbsp;PRO</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT IS WASYT ===== -->
+<section class="section" id="why" style="background:var(--surface)">
+  <div class="wrap split">
+    <div class="split-media" data-reveal>
+      <div class="scene-frame">
+        <video class="scene-video" src="assets/video/wasyt-scene-new.mp4" autoplay muted loop playsinline preload="auto" aria-label="WASYT — анимация"></video>
+      </div>
+    </div>
+    <div data-reveal data-d="1">
+      <span class="eyebrow">О продукте</span>
+      <h2 style="margin:16px 0 18px">Что такое WASYT?</h2>
+      <p class="lead" style="margin-bottom:16px">WASYT — это система автоматизации магазина: быстрая касса, продажи, работа с клиентами и полная аналитика торговли в реальном времени. Каждая продажа фиксируется, а остатки обновляются автоматически.</p>
+      <p style="margin-bottom:24px">Продавайте быстрее со сканером и штрих-кодами, принимайте оплату наличными, картой или по QR, печатайте чеки и ценники — а складской учёт ведётся сам в фоновом режиме.</p>
+      <ul class="checks">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Быстрая касса и продажи по штрих-коду</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Приём оплаты: наличные, карта, QR, рассрочка</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Аналитика продаж и выручки магазина</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOR WHOM (dark band) ===== -->
+<section class="section band-dark">
+  <span class="blob a" style="opacity:.18"></span>
+  <div class="wrap">
+    <div class="feat-head" data-reveal>
+      <span class="eyebrow">Почему WASYT?</span>
+      <h2 style="margin:16px 0 16px">Всё для управления магазином в одной системе</h2>
+      <p class="lead">WASYT объединяет товары, продажи, клиентов и финансы — каждый модуль работает из коробки и настраивается под вашу нишу.</p>
+    </div>
+  </div>
+
+  <!-- 01 Учёт товаров -->
+  <div class="wrap split feat-row">
+    <div class="split-media" data-reveal>
+      <div class="scene-frame feat-vid">
+        <video src="assets/video/uchet.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+    <div data-reveal data-d="1">
+      <span class="feat-eyebrow"><i>01</i>Модуль</span>
+      <h3 class="feat-title">Учёт товаров</h3>
+      <p class="feat-desc">Полный контроль склада в реальном времени: приёмка, остатки и инвентаризация ведутся автоматически — без ручного пересчёта.</p>
+      <ul class="checks dark">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Приёмка и перемещение товара</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Остатки в реальном времени</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Штрих-коды и инвентаризация</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 02 Продажи и касса -->
+  <div class="wrap split rev feat-row">
+    <div class="split-media" data-reveal>
+      <div class="scene-frame feat-vid">
+        <video src="assets/video/prodazhi-kassa.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+    <div>
+      <span class="feat-eyebrow"><i>02</i>Модуль</span>
+      <h3 class="feat-title">Продажи и касса</h3>
+      <p class="feat-desc">Быстрая продажа в один клик: сканер штрих-кодов, печать чеков и приём оплаты любым способом — касса работает даже без интернета.</p>
+      <ul class="checks dark">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Продажа по штрих-коду</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Наличные, карта, QR, рассрочка</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Печать чеков и ценников</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 03 Маркетинг -->
+  <div class="wrap split feat-row">
+    <div class="split-media" data-reveal>
+      <div class="scene-frame feat-vid">
+        <video src="assets/video/marketing.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+    <div data-reveal data-d="1">
+      <span class="feat-eyebrow"><i>03</i>Модуль</span>
+      <h3 class="feat-title">Маркетинг</h3>
+      <p class="feat-desc">Привлекайте и удерживайте покупателей: скидки, бонусы, акции и программы лояльности настраиваются под ваш магазин.</p>
+      <ul class="checks dark">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Скидки и акции</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Бонусы и кэшбэк</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Программы лояльности</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 04 Управление клиентами -->
+  <div class="wrap split rev feat-row">
+    <div class="split-media" data-reveal>
+      <div class="scene-frame feat-vid">
+        <video src="assets/video/crm.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+    <div data-reveal data-d="1">
+      <span class="feat-eyebrow"><i>04</i>Модуль</span>
+      <h3 class="feat-title">Управление клиентами</h3>
+      <p class="feat-desc">Единая база клиентов с историей покупок и сегментами — вы знаете, кто и что покупает, и возвращаете их за повторными продажами.</p>
+      <ul class="checks dark">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>База клиентов</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>История покупок</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Сегменты и рассылки</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 05 Отчёты и аналитика -->
+  <div class="wrap split feat-row">
+    <div class="split-media" data-reveal>
+      <div class="scene-frame feat-vid">
+        <video src="assets/video/otchet.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+    <div data-reveal data-d="1">
+      <span class="feat-eyebrow"><i>05</i>Модуль</span>
+      <h3 class="feat-title">Отчёты и аналитика</h3>
+      <p class="feat-desc">Прибыль, продажи и остатки в наглядных отчётах — принимайте решения на основе цифр, а не догадок.</p>
+      <ul class="checks dark">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Прибыль и выручка</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Топ товаров и категорий</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Отчёты по сменам и кассирам</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 06 Управление финансами -->
+  <div class="wrap split rev feat-row">
+    <div class="split-media" data-reveal>
+      <div class="scene-frame feat-vid">
+        <video src="assets/video/finance.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+    <div data-reveal data-d="1">
+      <span class="feat-eyebrow"><i>06</i>Модуль</span>
+      <h3 class="feat-title">Управление финансами</h3>
+      <p class="feat-desc">Контроль денег магазина: кассы, расходы, долги и баланс — всегда видно, сколько заработано и где находятся деньги.</p>
+      <ul class="checks dark">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Кассы и движение денег</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Расходы и долги</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Баланс магазина</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== НАПРАВЛЕНИЯ БИЗНЕСА ===== -->
+<section class="section" id="directions">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto 52px" data-reveal>
+      <span class="eyebrow">Направления бизнеса</span>
+      <h2 style="margin:16px 0 16px">WASYT под любой формат торговли</h2>
+      <p class="lead">Готовые решения для восьми ниш розницы — настраиваем систему под специфику именно вашего магазина.</p>
+    </div>
+    <div class="dirsec">
+      <a class="dircard" href="product.html" data-reveal><img src="assets/img/directions/shoes.jpg" alt="WASYT — автоматизация магазина обуви"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7v7a2 2 0 0 0 2 2h15a3 3 0 0 0 3-3c0-1.3-.8-2.2-2-2.7L13 8l-1-3H4a2 2 0 0 0-2 2z"/><path d="M2 12h6"/></svg></span><b>Магазин обуви</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="dircard" href="product.html" data-reveal data-d="1"><img src="assets/img/directions/clothing.jpg" alt="WASYT — автоматизация магазина одежды"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></span><b>Магазин одежды</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="dircard" href="product.html" data-reveal data-d="2"><img src="assets/img/directions/grocery.jpg" alt="WASYT — автоматизация продуктового магазина"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.5-6h11L19 11"/><path d="M3 11h18l-1.5 8a2 2 0 0 1-2 1.6H6.5a2 2 0 0 1-2-1.6z"/></svg></span><b>Продуктовый магазин</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="dircard" href="product.html" data-reveal data-d="3"><img src="assets/img/directions/build.jpg" alt="WASYT — автоматизация строительного магазина"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6L3 18l3 3 6.1-6.1a4 4 0 0 0 5.6-5.6l-2.4 2.4-2.1-.5-.5-2.1z"/></svg></span><b>Строительный магазин</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="dircard" href="product.html" data-reveal><img src="assets/img/directions/accessories.jpg" alt="WASYT — автоматизация магазина аксессуаров"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 7a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/><path d="M12 11v2l1.5 1"/><path d="M9 4.5L9.5 2h5l.5 2.5"/></svg></span><b>Магазин аксессуаров</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="dircard" href="product.html" data-reveal data-d="1"><img src="assets/img/directions/home.jpg" alt="WASYT — автоматизация магазина товаров для дома"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><b>Товары для дома</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="dircard" href="product.html" data-reveal data-d="2"><img src="assets/img/directions/electronics.jpg" alt="WASYT — автоматизация магазина электроники"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M10.5 18h3"/></svg></span><b>Магазин электроники</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="dircard" href="product.html" data-reveal data-d="3"><img src="assets/img/directions/cosmetics.jpg" alt="WASYT — автоматизация магазина косметики"><span class="veil"></span><span class="bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg></span><b>Магазин косметики</b><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+    </div>
+    <div class="center" style="margin-top:48px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap" data-reveal>
+      <button class="btn btn-primary" data-open-demo>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Получить демо-доступ
+      </button>
+      <a href="contacts.html" class="btn btn-ghost">Оставить заявку</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES TEASER ===== -->
+<section class="section" id="solutions">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto 52px" data-reveal>
+      <span class="eyebrow">Возможности</span>
+      <h2 style="margin:16px 0 16px">Всё для автоматизации магазина</h2>
+      <p class="lead">Восемь модулей, которые закрывают весь цикл магазина — от продажи на кассе и работы с клиентами до аналитики продаж.</p>
+    </div>
+    <div class="grid cols-4">
+      <div class="card" data-reveal>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3>Товароучётная система</h3>
+        <p>Управление товарами и ценами, планирование закупок, контроль остатков. Приход, продажи, инвентаризация.</p>
+      </div>
+      <div class="card" data-reveal data-d="1">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h3>Автоматизация розницы</h3>
+        <p>Простая программа для кассира, поддержка платёжных систем и обязательной маркировки. На любом компьютере.</p>
+      </div>
+      <div class="card" data-reveal data-d="2">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+        <h3>Печать документов</h3>
+        <p>Этикетки и ценники, счета, товарные чеки, накладные, счета-фактуры. Собственные шаблоны.</p>
+      </div>
+      <div class="card" data-reveal data-d="3">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>CRM для торговли</h3>
+        <p>История покупок, сегментация базы, бонусные программы лояльности, телефония и рассылки.</p>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+        <h3>Интеграции</h3>
+        <p>Готовые интеграции с лучшими решениями рынка: банковские системы, аналитика, госслужбы. Экспорт в Excel.</p>
+      </div>
+      <div class="card" data-reveal data-d="1">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Клиенты</h3>
+        <p>Соберите всё о клиенте: статистику, документы, задачи. Делайте рассылки по SMS, стройте воронки продаж.</p>
+      </div>
+      <div class="card" data-reveal data-d="2">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
+        <h3>Складской учёт</h3>
+        <p>Приёмки, отгрузки, инвентаризации. Работа с размерами, цветами, упаковками, серийными номерами, весовым товаром.</p>
+      </div>
+      <div class="card" data-reveal data-d="3">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+        <h3>Заказы</h3>
+        <p>Уведомления о новых заказах, назначение менеджеров, смена статусов, создание отгрузок. Уведомления в Telegram.</p>
+      </div>
+    </div>
+    <div class="center" style="margin-top:44px" data-reveal>
+      <a href="product.html" class="btn btn-ghost">Все возможности продукта
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTEGRATIONS ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="center" style="max-width:640px;margin:0 auto 52px" data-reveal>
+      <span class="eyebrow">Интеграции</span>
+      <h2 style="margin:16px 0 16px">Работает с тем, что вы уже используете</h2>
+      <p class="lead">Банки, фискальные системы, маркировка и мессенджеры — WASYT подключается к ключевым сервисам без доработок.</p>
+    </div>
+    <div class="integ" data-reveal>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></span><div><b>Банки</b><span>Рассрочка, эквайринг</span></div></div>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/></svg></span><div><b>Фискализация</b><span>Онлайн-ККМ, ОФД</span></div></div>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span><div><b>Маркировка</b><span>Asl Belgisi</span></div></div>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.5L2.9 11.84c-1.3.52-1.29 1.25-.24 1.57l4.88 1.52 1.88 5.77c.24.66.12.92.81.92.53 0 .77-.24 1.06-.53l2.28-2.22 4.74 3.5c.87.48 1.5.23 1.72-.81l3.12-14.69c.32-1.27-.48-1.84-1.39-1.47z"/></svg></span><div><b>Telegram</b><span>Уведомления, бот</span></div></div>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><div><b>SMS-шлюзы</b><span>Рассылки клиентам</span></div></div>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg></span><div><b>Excel / 1С</b><span>Импорт и экспорт</span></div></div>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></span><div><b>API</b><span>Открытый REST API</span></div></div>
+      <div class="cell"><span class="bx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><div><b>Веб-витрина</b><span>Синхронизация остатков</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="center" style="max-width:640px;margin:0 auto 52px" data-reveal>
+      <span class="eyebrow">Отзывы</span>
+      <h2 style="margin:16px 0 16px">Что говорят владельцы магазинов</h2>
+      <p class="lead">Более 400 магазинов по всему Узбекистану автоматизировали торговлю с WASYT.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="tcard" data-reveal>
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg></div>
+        <blockquote>«Раньше инвентаризация занимала два дня и кучу нервов. С WASYT мы делаем её за пару часов прямо со смартфона по штрих-кодам. Остатки наконец сходятся.»</blockquote>
+        <div class="who"><div class="ava">А</div><div><b>Азиз Рахимов</b><span>Сеть магазинов техники, Ташкент</span></div></div>
+      </div>
+      <div class="tcard" data-reveal data-d="1">
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg></div>
+        <blockquote>«Продажа в рассрочку с печатью договора — за минуту. Интеграция с банком работает без сбоев. Менеджеры стали продавать заметно быстрее.»</blockquote>
+        <div class="who"><div class="ava">Д</div><div><b>Дилноза Каримова</b><span>Мебельный салон, Самарканд</span></div></div>
+      </div>
+      <div class="tcard" data-reveal data-d="2">
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9 16.5 13.5 18.5 21 12 16.5 5.5 21 7.5 13.5 2 9 9 9"/></svg></div>
+        <blockquote>«Веду семь точек в трёх городах и вижу выручку каждой в реальном времени. Отчёты, которые раньше собирал бухгалтер неделю, теперь открываю в один клик.»</blockquote>
+        <div class="who"><div class="ava">Ф</div><div><b>Фаррух Юлдашев</b><span>Дистрибуция, Фергана</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto 40px" data-reveal>
+      <span class="eyebrow">Тарифы</span>
+      <h2 style="margin:16px 0 22px">Сравнение тарифов</h2>
+      <div class="bill-toggle" data-billing>
+        <button class="active" data-mode="month">Ежемесячно</button>
+        <button data-mode="year">Ежегодно</button>
+      </div>
+      <p class="bill-note">Лучший выбор для стабильного роста</p>
+    </div>
+
+    <div class="plans plans-2" data-reveal>
+      <div class="plan">
+        <div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="pname">СТАРТ</div>
+        <div class="pdesc">Для одной точки и небольшого магазина</div>
+        <div class="price"><span class="amt"><span data-price data-month="299 000" data-year="239 000">299 000</span></span><span class="per">сум/месяц</span></div>
+        <span class="psave" data-save data-month="−20% при оплате за год" data-year="Экономия 720 000 сум в год"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>−20% при оплате за год</span>
+        <ul class="plist">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>До 10 пользователей</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>∞ товаров</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>До 5 000 клиентов</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>∞ история транзакций</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Базовые модули</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>+150 000 сум за доп. локацию (до 3 локаций)</li>
+        </ul>
+        <a href="contacts.html" class="btn btn-ghost">Начать</a>
+      </div>
+      <div class="plan feat">
+        <span class="tag">Популярный выбор</span>
+        <div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3.5-4 3 3L21 7"/><polyline points="21 11 21 7 17 7"/></svg></div>
+        <div class="pname">БИЗНЕС</div>
+        <div class="pdesc">Для сети из нескольких точек</div>
+        <div class="price"><span class="amt"><span data-price data-month="499 000" data-year="399 000">499 000</span></span><span class="per">сум/месяц</span></div>
+        <span class="psave" data-save data-month="−20% при оплате за год" data-year="Экономия 1 200 000 сум в год"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>−20% при оплате за год</span>
+        <ul class="plist">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>До 20 пользователей</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>∞ товаров</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>До 25 000 клиентов</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>∞ история транзакций</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Продвинутые модули</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>+150 000 сум за доп. локацию (до 5 локаций)</li>
+        </ul>
+        <a href="contacts.html" class="btn btn-primary">Выбрать Бизнес</a>
+      </div>
+    </div>
+
+    <div class="center" style="margin:clamp(48px,6vw,72px) 0 28px" data-reveal>
+      <h3 style="font-size:clamp(20px,2vw,26px)">Возможности тарифов</h3>
+    </div>
+
+    <div class="cmp" data-reveal>
+      <!-- sticky pricing header -->
+      <div class="cmp-head">
+        <div class="ch-feat">Возможности</div>
+        <div class="cmp-col">
+          <div class="cc-name">Старт</div>
+          <div class="cc-price"><span data-price data-month="299 000" data-year="239 000">299 000</span></div>
+          <div class="cc-per">сум/месяц</div>
+        </div>
+        <div class="cmp-col biz">
+          <div class="cc-badge">Популярный</div>
+          <div class="cc-name">Бизнес</div>
+          <div class="cc-price"><span data-price data-month="499 000" data-year="399 000">499 000</span></div>
+          <div class="cc-per">сум/месяц</div>
+        </div>
+      </div>
+
+      <!-- accordion categories (rendered by pricing.js) -->
+      <div id="cmp-list"></div>
+
+    </div>
+
+    <!-- trust strip -->
+    <div class="price-trust" data-reveal>
+      <div class="pt"><span class="pti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Безопасность данных</div>
+      <div class="pt"><span class="pti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></span>Облачное хранение</div>
+      <div class="pt"><span class="pti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span>Автоматическое резервное копирование</div>
+      <div class="pt"><span class="pti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></span>Поддержка 24/7</div>
+      <div class="pt"><span class="pti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></span>Регулярные обновления</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CTA + FORM ===== -->
+<section class="section" id="connect">
+  <div class="wrap split">
+    <div data-reveal>
+      <span class="eyebrow">Обратная связь</span>
+      <h2 style="margin:16px 0 16px">Оставьте заявку — мы свяжемся с вами</h2>
+      <p class="lead" style="margin-bottom:28px">Расскажите о вашем бизнесе, и менеджер подберёт конфигурацию WASYT под ваши задачи. Без давления и навязывания.</p>
+      <ul class="checks">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Бесплатная консультация и демонстрация</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Ответим в течение рабочего дня</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Поможем перенести данные из старой системы</li>
+      </ul>
+    </div>
+    <div data-reveal data-d="1">
+      <div class="contact-card">
+        <form data-validate data-success="Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.">
+          <div class="field">
+            <label for="f-name">Ваше имя</label>
+            <input id="f-name" type="text" name="name" placeholder="Как к вам обращаться" data-rule="required">
+            <div class="msg">Пожалуйста, укажите имя</div>
+          </div>
+          <div class="field">
+            <label for="f-phone">Телефон</label>
+            <input id="f-phone" type="tel" name="phone" placeholder="+998 __ ___ __ __" data-rule="required phone">
+            <div class="msg">Введите корректный номер телефона</div>
+          </div>
+          <div class="field">
+            <label for="f-biz">Сфера бизнеса</label>
+            <select id="f-biz" name="biz">
+              <option value="">Выберите вариант</option>
+              <option>Магазин электроники / техники</option>
+              <option>Магазин одежды и обуви</option>
+              <option>Продуктовый магазин</option>
+              <option>Магазин косметики</option>
+              <option>Другой магазин</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Комментарий <span style="color:var(--muted);font-weight:400">(необязательно)</span></label>
+            <textarea id="f-msg" name="msg" placeholder="Коротко о вашей задаче"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Отправить заявку</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><img class="logo" src="assets/img/wasyt-logo-light.png" alt="WASYT"></a>
+        <p style="margin-top:16px;max-width:34ch">Система автоматизации магазина для малого и среднего бизнеса Узбекистана.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.5L2.9 11.84c-1.3.52-1.29 1.25-.24 1.57l4.88 1.52 1.88 5.77c.24.66.12.92.81.92.53 0 .77-.24 1.06-.53l2.28-2.22 4.74 3.5c.87.48 1.5.23 1.72-.81l3.12-14.69c.32-1.27-.48-1.84-1.39-1.47z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <div class="foot-list">
+          <a href="index.html">Главная</a>
+          <a href="product.html">Продукт</a>
+          <a href="demo.html">Демо</a>
+          <a href="partners.html">Партнёрство</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+      <div>
+        <h4>Продукт</h4>
+        <div class="foot-list">
+          <a href="product.html">Товароучёт</a>
+          <a href="product.html">Автоматизация розницы</a>
+          <a href="product.html">CRM для торговли</a>
+          <a href="product.html">Интеграции</a>
+          <a href="product.html">Складской учёт</a>
+        </div>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <div class="foot-list">
+          <a href="https://yandex.uz/maps/-/CDeVI0Zz" target="_blank" rel="noopener">г. Ташкент, ул. Мустакиллик 79А</a>
+          <a href="tel:+998550555100">+998 55 055 51 00</a>
+          <a href="mailto:wasyt.uz@gmail.com">wasyt.uz@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2019–2026 WASYT. Все права защищены.</span>
+      <span>Политика конфиденциальности · Условия использования</span>
+    </div>
+  </div>
+</footer>
+
+<!-- toast -->
+<!-- ===== CART DRAWER ===== -->
+<div class="cart-drawer" id="cart-drawer">
+  <div class="cart-bg" data-close-cart></div>
+  <div class="cart-panel">
+    <div class="cart-head"><h3>Корзина</h3><button class="x" data-close-cart aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-foot" id="cart-foot">
+      <div class="cart-total"><span>Итого</span><b id="cart-total-val">0 сум</b></div>
+      <button class="btn btn-primary" id="cart-checkout">Оформить заявку</button>
+      <p class="hint">Без онлайн-оплаты — менеджер свяжется и подтвердит заказ.</p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span><span class="txt"></span></div>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/demo.js"></script>
+<script src="assets/js/pricing.js"></script>
+</body>
+</html>
